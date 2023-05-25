@@ -66,7 +66,7 @@ npx tsc
 ~~~
 
 ~~~
-node .\js\teste\index.js
+node .\js\app\app.js
 ~~~
 <br>
 
