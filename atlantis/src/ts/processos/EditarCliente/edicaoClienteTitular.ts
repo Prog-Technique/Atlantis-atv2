@@ -33,8 +33,8 @@ export default class EdicaoClienteTitular extends Processo {
           
             while (this.execucao) {
             this.menu.mostrar();
-            console.log(`Nome do cliente:'${clienteForEach.Nome}'\n
-                         CPF do cliente:'${clienteDocFilter.Numero}'`);
+            console.log(`Nome do cliente: ${clienteForEach.Nome}`);
+            console.log(`CPF do cliente: ${clienteDocFilter.Numero}`);
             this.opcao = this.entrada.receberNumero(`Qual opção deseja? `);
             
             switch (this.opcao) {

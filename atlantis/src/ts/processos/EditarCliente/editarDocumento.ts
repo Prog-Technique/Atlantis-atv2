@@ -18,7 +18,7 @@ export default class EditarDocumento extends Processo {
       console.log(`|  Documento:`);
       console.log(`|  Tipo: ${i.Tipo}`);
       console.log(`|  Número: ${i.Numero}`);
-      console.log(`|  Data de expedicao: ${i.DataExpedicao}`);
+      console.log(`|  Data de expedicao: ${i.DataExpedicao.toLocaleDateString()}`);
       console.log(`------------------------------`);
     });
 
