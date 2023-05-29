@@ -1,7 +1,8 @@
 import Processo from "../abstracoes/processo"
 import MenuPrincipal from "../menus/menuPricipal"
-import TipoCadastroCliente from "./tipoCadastroCliente"
-import TipoListagemClientes from "./tipoListagemClientes"
+import TipoCadastroCliente from "./Tipos/tipoCadastroCliente"
+import TipoEdicaoCliente from "./Tipos/tipoEdicaoCliente"
+import TipoListagemClientes from "./Tipos/tipoListagemClientes"
 
 export default class Principal extends Processo {
     constructor() {
@@ -15,6 +16,10 @@ export default class Principal extends Processo {
         switch (this.opcao) {
             case 1:
                 this.processo = new TipoCadastroCliente()
+                this.processo.processar()
+                break
+            case 2:
+                this.processo = new TipoEdicaoCliente()
                 this.processo.processar()
                 break
             case 3:
