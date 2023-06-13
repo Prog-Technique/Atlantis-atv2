@@ -9,7 +9,7 @@ export default class EditarNomeSocial extends Processo {
   }
 
   processar() {
-    let novoNomeSocial = this.entrada.receberTexto("Qual o novo nome social ");
+    let novoNomeSocial = this.entrada.receberTexto("Qual o novo nome social? ");
     this.cliente.NomeSocial = novoNomeSocial;
   }
 }

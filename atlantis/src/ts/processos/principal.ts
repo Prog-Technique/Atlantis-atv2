@@ -1,5 +1,5 @@
 import Processo from "../abstracoes/processo"
-import MenuPrincipal from "../menus/menuPricipal"
+import MenuPrincipal from "../menus/menuPrincipal"
 import TipoCadastroCliente from "./Tipos/tipoCadastroCliente"
 import TipoEdicaoCliente from "./Tipos/tipoEdicaoCliente"
 import TipoListagemClientes from "./Tipos/tipoListagemClientes"
