@@ -5,13 +5,13 @@
 ![atlantis](https://github.com/Prog-Technique/Atlantis-atv1/assets/100284976/3478a0c8-d044-4c74-a36c-70d8d9f384a5)
   
 <a href="https://www.typescriptlang.org/" target="blank">
-<img align="center" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="typescript"/></a> 
+<img align="center" src="https://img.shields.io/badge/TypeScript-0094DA?style=for-the-badge&logo=typescript&logoColor=white" alt="typescript"/></a> 
 
 <a href="https://nodejs.org/en/about/" target="blank">
-<img align="center" src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="nodejs"/></a>
+<img align="center" src="https://img.shields.io/badge/Node.js-0094DA?style=for-the-badge&logo=node.js&logoColor=white" alt="nodejs"/></a>
 
 <a href="https://code.visualstudio.com/" target="blank">
-<img align="center" src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" alt="vsc"/></a> 
+<img align="center" src="https://img.shields.io/badge/Visual_Studio_Code-0094DA?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" alt="vsc"/></a> 
 
 </div>
 
@@ -19,6 +19,14 @@
 
 > 🔗 **Link** <br>
 > - Documento: [Atlantis](https://github.com/Prog-Technique/Atlantis-atv2/files/11568391/atvii-atlantis-water-park.pdf)
+
+<br>
+
+## 🎯 Objetivo
+Implementar as seguintes funcionalidades:
+- CRUD de cliente, incluindo clientes dependentes.
+- Listagem de clientes dependentes para um titular específico.
+- Listagem do titular para o cliente dependente específico.
 
 <br>
 
@@ -31,19 +39,14 @@ A nova versão segue como um sistema do tipo CLI, não há comunicação SGBD, p
 
 O  padrão  Strategy fica evidenciado no diagrama de classe mostrado na Figura 1. Percebe-se uma interface, denominada Menu, a partir da interface, vários outros algoritmos são definidos por classes que implementação a interface Menu.
 
+<div align="center">
+
 ![strategy](https://github.com/Prog-Technique/Atlantis-atv2/assets/100284976/6916d427-cbe6-4acd-b55b-59b13b4d37db)
+</div>
 
 Padrões de projeto não são um framework ou um código pronto, são uma definição de alto nível de como um problema comum pode ser solucionado. Então, o padrão  Strategy foi aplicado de um modo diferente, com uma classe abstrata, denominada de Processo. Um processo defini qualquer ação ou comportamento que o sistema deva fazer. Esta aplicação diferenciada é evidenciada no diagrama de classe mostrado na Figura 2.
 
 ![strategyAbstrato](https://github.com/Prog-Technique/Atlantis-atv2/assets/100284976/063b76dd-49d6-4a53-aca6-0b62665586b2)
-
-<br>
-
-## 🎯 Objetivo
-Implementar as seguintes funcionalidades:
-- CRUD de cliente, incluindo clientes dependentes.
-- Listagem de clientes dependentes para um titular específico.
-- Listagem do titular para o cliente dependente específico.
 
 <br>
 
@@ -62,12 +65,17 @@ cd atlantis
 ~~~
 
 ~~~
+npm install
+~~~
+
+~~~
 npx tsc
 ~~~
 
 ~~~
-node .\js\app\app.js
+node .\src\js\app\app.js
 ~~~
+
 <br>
 
 → [Voltar ao topo](#topo)
