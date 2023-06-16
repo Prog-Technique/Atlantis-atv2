@@ -3,7 +3,7 @@ import Armazem from "../dominio/armazem";
 import Cliente from "../modelos/cliente";
 import { TipoDocumento } from "../enumeracoes/TipoDocumento";
 
-export default class DeletarCliente extends Processo {
+export default class DeletarTitular extends Processo {
   private cliente: Cliente[];
   constructor() {
     super();
